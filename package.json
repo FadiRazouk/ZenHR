@@ -8,7 +8,9 @@
   },
   "scripts": {
     "cypress:test-headless": "cypress run --browser chrome --headless",
-    "cypress:gui": "cypress run --browser chrome --no-exit"
+    "cypress:gui": "cypress run --browser chrome --no-exit",
+    "eslint": "eslint --ext .js .",
+    "eslint-fix": "eslint --ext .js . --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
