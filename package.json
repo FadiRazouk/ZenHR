@@ -1,14 +1,22 @@
 {
   "name": "ZenHR-test",
   "version": "1.0.0",
-  "description": "",
+  "dependencies": {
+    "@babel/core": "^7.11.0",
+    "eslint": "7.21.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  },
   "scripts": {
     "cypress:test-headless": "cypress run --browser chrome --headless",
     "cypress:gui": "cypress run --browser chrome --no-exit"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "author": "Fadi Razouk",
   "license": "ISC",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
     "cypress": "9.7.0"
   }
 }
