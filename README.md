@@ -51,8 +51,12 @@ A step by step series of examples that tell you how to run tests with a gui.
 > cd ZenHR
 /ZenHR > docker run -it -v $PWD:/e2e -w /e2e  cypress/included:4.1.0
 ```
-#####  You can also find a run of the tests and an eslint check on CI/CD run on GitHub Actions in the link below: 
+#####  You can also find a run of the tests and an eslint check on CI/CD run on GitHub Actions in the links below: 
+ESlint : https://github.com/FadiRazouk/ZenHR/runs/6658976941?check_suite_focus=true
+Cypress : https://github.com/FadiRazouk/ZenHR/runs/6658976777?check_suite_focus=true
+
 # Note
+
 #####  Why did i use request instead of clicking each and every link?
 The reason is Http request is the exact same thing that your browser does when you type in a url. 
 The only difference is, that as a response, you usually get an html document, instead of json object.
