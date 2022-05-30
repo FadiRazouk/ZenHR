@@ -56,7 +56,7 @@ ESlint : https://github.com/FadiRazouk/ZenHR/runs/6658976941?check_suite_focus=t
 
 Cypress : https://github.com/FadiRazouk/ZenHR/runs/6658976777?check_suite_focus=true
 
- [^note]:
+#Note :
 
 #####  Why did i use request instead of clicking each and every link?
 The reason is Http request is the exact same thing that your browser does when you type in a url. 
