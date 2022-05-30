@@ -1,0 +1,28 @@
+{
+    "plugins": [
+      "cypress"
+    ],
+    "rules": {
+        "cypress/no-assigning-return-values": "error",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "warn",
+        "cypress/no-async-tests": "error",
+        "cypress/no-pause": "error",
+        "indent": ["error", "tab", {"SwitchCase": 1}],
+        "quotes": [2, "single"],
+        "newline-before-return": 2,
+        "semi": [2, "always"],
+        "comma-dangle": [2, "always-multiline"],
+        "prefer-destructuring": "warn"
+    },
+    "env": {
+        "cypress/globals": true
+    },
+    "extends": [
+        "plugin:cypress/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false
+    }
+}

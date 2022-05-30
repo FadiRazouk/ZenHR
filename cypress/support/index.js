@@ -1,9 +1,9 @@
-import "./commands";
+import './commands';
 
 beforeEach(() => {
-    cy.window().then((window) => {
-        window.sessionStorage.clear();
-        window.localStorage.clear();
-    });
+	cy.window().then((window) => {
+		window.sessionStorage.clear();
+		window.localStorage.clear();
+	});
 });
-Cypress.on("uncaught:exception", () => false);
+Cypress.on('uncaught:exception', () => false);
