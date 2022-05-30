@@ -4,7 +4,7 @@
     "fixturesFolder": "cypress/fixtures",
     "integrationFolder": "cypress/integration",
     "pluginsFile": "cypress/plugins",
-    "retries": 3,
+    "retries": 1,
     "screenshotOnRunFailure":false,
     "supportFile": "cypress/support",
     "video": false
