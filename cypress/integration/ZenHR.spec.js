@@ -5,11 +5,10 @@ import utils from '../src/utils';
 describe('ZenHR', () => {
 
 	it('Checking the availability of the links, @ID: 01', () => {
-		const importantAPIs = ['events','holidays','employees','announcements','birthday'];
+		const importantAPIs = ['events','holidays','employees','birthday'];
 		cy.intercept('GET', '/en/events*').as('events');
 		cy.intercept('GET', '/en/holidays/calendar_holidays*').as('holidays');
 		cy.intercept('POST', '/en/employees/53497/timeoff_balances').as('employees');
-		cy.intercept('GET', '/en/announcements/partial_announcements*').as('announcements');
 		cy.intercept('GET', '/en/dashboard/employees_with_upcoming_birthdays*').as('birthday');
 
 		cy.visit('/en/users/sign_in');
